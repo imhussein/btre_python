@@ -1,0 +1,22 @@
+#header {
+  height: 30px;
+  line-height: 30px;
+  background-color: #3f51b5;
+  color: #fff;
+}
+
+#branding h1 {
+  color: #fff;
+}
+
+#container {
+  font-family: "Operator Mono";
+}
+
+caption {
+  background-color: #263238 !important;
+}
+
+tr a {
+  font-family: "Operator Mono";
+}

@@ -1,0 +1,18 @@
+<nav class="navbar indigo">
+  <div class="container">
+    <div class="nav-wrapper">
+      <a href="{% url 'homepage' %}" class="brand-logo">App</a>
+      <ul class="right">
+        <li {% if request.path == "/" %} class="active" {% else %} class="" {% endif %}>
+          <a href="{% url 'homepage' %}">Home</a>
+        </li>
+        <li {% if "about" in request.path %} class="active" {% else %} class="" {% endif %}>
+          <a href="{% url 'about' %}">About</a>
+        </li>
+        <li {% if "listings" in request.path %} class="active" {% else %} class="" {% endif %}>
+          <a href="{% url 'listings' %}">Listings</a>
+        </li>
+      </ul>
+    </div>
+  </div>
+</nav>
